@@ -1,0 +1,28 @@
+650  cd /Users/cmdb/qbb2020-answers/week1/1d
+  651  ls
+  652  cp /Users/cmdb/Downloads/asm/jump2k.2_fastqc/Images/per_base_quality.png
+  653  ls
+  654  mkdir jump2k.2
+  655  cp /Users/cmdb/Downloads/asm/jump2k.2_fastqc/Images/per_base_quality.png ./jump2k.2/
+  656  ls
+  657  ls jump2k.2/
+  658  mkdir jump2k.1
+  659  cp /Users/cmdb/Downloads/asm/jump2k.1_fastqc/Images/per_base_quality.png ./jump2k.1/
+  660  ls
+  661  ls jump2k.1
+  662  mkdir frag180.1
+  663  mkdir frag180.2
+  664  cp /Users/cmdb/Downloads/asm/frag180.1_fastqc/Images/per_base_quality.png ./frag180.1/
+  665  cp /Users/cmdb/Downloads/asm/frag180.2_fastqc/Images/per_base_quality.png ./frag180.2/
+  666  ls
+  667  ls -l
+  668  ls frag180.1
+  669  cd frag180.1
+  670  open per_base_quality.png 
+  671  cd ..
+  672  ls
+  673  cd jump2k.1
+  674  open per_base_quality.png 
+  675  cd ..
+  676  ls
+  677  nano 1d.commands.txt

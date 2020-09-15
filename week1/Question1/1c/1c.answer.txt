@@ -1,0 +1,8 @@
+Expected Total Coverage = 60x
+
+Calculated by doing ((2*(total_seq*seq_len)) + (2*(total_seq*seq_len))) / genome size
+
+= ((2*(70,355*50)) + (2*(35,178*100))) / 233,806
+
+= 60.1828
+   

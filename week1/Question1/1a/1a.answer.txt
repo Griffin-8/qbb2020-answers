@@ -1,0 +1,1 @@
+ref.fa sequence length is 233,806 bp

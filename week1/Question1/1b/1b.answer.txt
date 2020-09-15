@@ -1,0 +1,5 @@
+Frag180.1 = 35178 reads with 100 length
+Frag180.2 = 35178 reads with 100 length
+
+Jump2k.1 = 70355 reads with 50 length
+Jump2k.2 = 70355 reads wtih 50 length

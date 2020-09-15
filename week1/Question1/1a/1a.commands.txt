@@ -1,0 +1,6 @@
+conda activate day3
+cd Downloads
+cd asm
+samtools faidx ref.fa
+ls
+head ref.fa.fai

@@ -1,0 +1,29 @@
+conda activate cmdb
+ls
+cd Downloads
+cd asm
+ls
+fastqc jump2k.1.fq 
+ls
+fastqc jump2k.2.fq 
+ls
+fastqc frag180.1.fq 
+ls
+fastqc frag180.2.fq 
+ls
+At this point I unzipped each file manually in Finder
+cd jump2k.1_fastqc
+ls
+less -S fastqc_data.txt 
+cd ..
+cd jump2k.2_fastqc
+ls
+less -S fastqc_data.txt
+cd ..
+cd frag180.1_fastqc
+ls
+less -S fastqc_data.txt
+cd ..
+cd frag180.2_fastqc
+ls
+less -S fastqc_data.txt  
