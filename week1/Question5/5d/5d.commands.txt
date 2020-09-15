@@ -1,0 +1,20 @@
+  552  conda activate day3
+  553  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13854-14566 > /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt
+  554  conda activate cmdb
+  555  python ported_decoder.py --decode --input /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt 
+  556  python ported_decoder.py --decode --/Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt 
+  557  python ported_decoder.py --decode --input --rev_comp /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt 
+  558*  
+  559  python ported_decoder.py --decode --input [--rev_comp] /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt 
+  560  python ported_decoder.py --decode --input [/Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt] 
+  561  cat ported_decoder.py 
+  562  python ported_decoder.py --decode --input /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt --rev_comp
+  563  conda activate day3
+  564  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13854-14566 > /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt
+  565  conda activate cmdb
+  566  python ported_decoder.py --decode --input /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt --rev_comp
+  567  conda activate day3
+  568  samtools faidx contigs.fasta NODE_3_length_41352_cov_20.588756:13854-14565 > /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt
+  569  conda activate cmdb
+  570  python ported_decoder.py --decode --input /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt --rev_comp
+  571  python ported_decoder.py --decode --input /Users/cmdb/qbb2020-answers/week1/Question5/5c/5c.answer.txt --rev_comp > /Users/cmdb/qbb2020-answers/week1/Question5/5d/5d.answer.txt

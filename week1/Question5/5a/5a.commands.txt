@@ -1,0 +1,15 @@
+  736  show-coords out.rdiff
+  737  show.coords out.mdelta
+  738  show-coords out.mdelta
+  739  show-coords -l out.mdelta
+  740  show-coords -k out.mdelta
+  741  show-coords -c out.mdelta
+  742  show-snps out.delta
+  743  show-snps -C out.delta
+  744  show-diff out.delta
+  745  show-coords out.delt
+  746  show-coords out.delta
+  747  show-coords out.delta > /Users/cmdb/qbb2020-answers/week1/Question5/5a/5a.answer.txt
+  748  show-diff out.delta >> /Users/cmdb/qbb2020-answers/week1/Question5/5a/5a.answer.txt
+  749  nano /Users/cmdb/qbb2020-answers/week1/Question5/5a/5a.answer.txt
+  750  nano /Users/cmdb/qbb2020-answers/week1/Question5/5a/5a.commands.txt

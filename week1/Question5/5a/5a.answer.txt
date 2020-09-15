@@ -1,0 +1,28 @@
+/Users/cmdb/Downloads/asm/ref.fa /Users/cmdb/Downloads/asm/asm/contigs.fasta
+NUCMER
+
+    [S1]     [E1]  |     [S2]     [E2]  |  [LEN 1]  [LEN 2]  |  [% IDY]  | [TAGS]
+=====================================================================================
+  127965   233795  |   105831        1  |   105831   105831  |    99.99  | Halomonas	NODE_1_length_105831_cov_20.671371
+   40651    88511  |    47861        1  |    47861    47861  |   100.00  | Halomonas	NODE_2_length_47861_cov_20.231319
+       3    26789  |    41352    14566  |    26787    26787  |   100.00  | Halomonas	NODE_3_length_41352_cov_20.588756
+   26790    40642  |    13853        1  |    13853    13853  |   100.00  | Halomonas	NODE_3_length_41352_cov_20.588756
+   88532   127954  |    39423        1  |    39423    39423  |   100.00  | Halomonas	NODE_4_length_39423_cov_20.384723
+/Users/cmdb/Downloads/asm/ref.fa /Users/cmdb/Downloads/asm/asm/contigs.fasta
+NUCMER
+
+[SEQ]	[TYPE]	[S1]	[E1]	[LEN 1]
+Halomonas	BRK	1	2	2
+Halomonas	GAP	26790	26789	0	712	-712
+Halomonas	SEQ	40643	40650	8	NODE_3_length_41352_cov_20.588756	NODE_2_length_47861_cov_20.231319
+Halomonas	SEQ	88512	88531	20	NODE_2_length_47861_cov_20.231319	NODE_4_length_39423_cov_20.384723
+Halomonas	SEQ	127955	127964	10	NODE_4_length_39423_cov_20.384723	NODE_1_length_105831_cov_20.671371
+Halomonas	BRK	233796	233806	11
+
+
+In the show-diff table, we see a Gap in the reference sample, when compared to our assembly, of 712 bp. Looking closely at the show-coords, we see that lines 3 and 4 of the alignments are cut off by 1 bp in the reference alignment and by 714 bp in the assembly alignment. 
+
+Assembly position: 14565 - 13854 bp
+reference position: 26789-26790 bp
+
+ 
