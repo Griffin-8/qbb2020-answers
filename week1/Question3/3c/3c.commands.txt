@@ -1,0 +1,4 @@
+  630  head contigs.fasta.fai
+  631  sort -n contigs.fasta.fai
+  632*  
+  633  sed -n '1p' contigs.fasta.fai > /Users/cmdb/qbb2020-answers/week1/Question3/3c/3c.answer.txt

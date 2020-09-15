@@ -1,0 +1,19 @@
+  607  cd
+  608  cd Downloads/
+  609  ls
+  610  cd asm
+  611  cd asm
+  612  ls
+  613  samtools faidx contigs.fasta
+  614  ls
+  615  cat /Users/cmdb/qbb2020-answers/week1/Question1/1a/1a.commands.txt 
+  616  ls
+  617  head contigs.fasta.fai
+  618  cat contigs.fasta.fai
+  619  awk -F '|' '$1 == "smiths" {sum += $3} END {print sum}' inputfilename
+  620  awk -F '|' '$1 == "smiths" {sum += $3} END {print sum}' inputfilename
+  621  awk '{SUM+=$2}END{print SUM}'
+  622  awk '{SUM+=$2}END{print SUM}' contigs.fasta.fai
+  623  awk '{SUM+=$2}END{print SUM}' contigs.fasta.fai > /Users/cmdb/qbb2020-answers/week1/Question3/3b/3b.answer.txt
+  624  cat /Users/cmdb/qbb2020-answers/week1/Question3/3b/3b.answer.txt
+  625  nano /Users/cmdb/qbb2020-answers/week1/Question3/3b/3b.commands.txt

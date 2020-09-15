@@ -1,0 +1,4 @@
+ 549  grep -c '>' contigs.fasta
+  550  grep -c '>' contigs.fasta > /Users/cmdb/qbb2020-answers/week1/Question3/3a/3a.answer.txt
+  551  grep -c '>' contigs.fasta
+  552  cat /Users/cmdb/qbb2020-answers/week1/Question3/3a/3a.answer.txt

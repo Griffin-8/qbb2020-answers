@@ -1,0 +1,3 @@
+NODE_2_length_47861_cov_20.231319	47861	107666	60	61
+
+contig N50 size is 47861 bp because the first and second largest contigs cover 50% of the total sequence. Therefore 47861 bp is the minimum contig length required to cover this.
