@@ -1,0 +1,13 @@
+  686  cat out.report 
+  687  dnadiff -h
+  688  ls
+  689  cat out.rdiff
+  690  cat out.snps
+  691  cat out.mdelta
+  692  las
+  693  ls
+  694  cat out.delta
+  695  ls
+  696  cat out.report
+  697  cat out.report > /Users/cmdb/qbb2020-answers/week1/Question4/4c/4c.answer.txt
+  698  nano /Users/cmdb/qbb2020-answers/week1/Question4/4c/4c.answer.txt 

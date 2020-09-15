@@ -1,0 +1,11 @@
+  671  nucmer /Users/cmdb/Downloads/asm/ref.fa ./contigs.fasta
+  672  ls
+  673  show-coords out.delta
+  674  show-coords out.delta | sed -n '1p'
+  675  show-coords out.delta | sed -n '4p'
+  676  show-coords out.delta | sed -n '5p'
+  677  show-coords out.delta | sed -n 'p'
+  678  show-coords out.delta | sed -n '6p'
+  679  show-coords out.delta | sed -n '6p' > /Users/cmdb/qbb2020-answers/week1/Question4/4b/4b.answer.txt
+  680  nano /Users/cmdb/qbb2020-answers/week1/Question4/4b/4b.answer.txt
+  681  nano /Users/cmdb/qbb2020-answers/week1/Question4/4b/4b.commands.txt

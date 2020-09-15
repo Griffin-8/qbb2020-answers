@@ -1,0 +1,4 @@
+  127965   233795  |   105831        1  |   105831   105831  |    99.99  | Halomonas	NODE_1_length_105831_cov_20.671371
+
+
+length of longest alignment is 105831 bp

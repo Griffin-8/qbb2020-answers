@@ -1,0 +1,6 @@
+  662  dnadiff /Users/cmdb/Downloads/asm/ref.fa ./contigs.fasta
+  663  ls
+  664  cat out.report 
+  665  cat out.report > /Users/cmdb/qbb2020-answers/week1/Question4/4a/4a.answer.txt
+  666  nano /Users/cmdb/qbb2020-answers/week1/Question4/4a/4a.answer.txt
+  667  nano /Users/cmdb/qbb2020-answers/week1/Question4/4a/4a.commands.txt
