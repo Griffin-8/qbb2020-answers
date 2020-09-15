@@ -1,0 +1,12 @@
+776  jellyfish dump -c mer_counts.jf > 2b/mer_counts_dumps.fa
+  777  ls
+  778  cd 2b
+  779  ls
+  780  head mer_counts_dumps.fa
+  781  sort -n mer_counts_dumps.fa | tail
+  782  tail mer_counts_dumps.fa
+  783  sort -k 2n mer_counts_dumps.fa > mer_counts_dumps_sorted.fa 
+  784  tail mer_counts_dumps_sorted.fa 
+  785  tail mer_counts_dumps_sorted.fa > 2b.answer.txt
+  786  ls
+  787  cat 2b.answer.txt 

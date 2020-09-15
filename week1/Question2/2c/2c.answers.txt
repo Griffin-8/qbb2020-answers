@@ -1,0 +1,1 @@
+Genome Haploid lenth minimum: 233,468 bp; the estimated genome size based on kmer frequencies.

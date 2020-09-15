@@ -1,0 +1,50 @@
+684  conda install jellyfish spades mummer
+  685  jellyfish count -m 21 -C -s 1000000 /Users/cmdb/Downloads/asm/*.fq
+  686  jellyfish histo mer_counts.jf > reads.histo
+  687  ls
+  688  cd qbb2020-answers/
+  689  ls
+  690  cd week1
+  691  ls
+  692  mkdir Question2
+  693  ls
+  694  mv /Users/cmdb/mer_counts.jf ./Question2/
+  695  ls
+  696  ls Question2
+  697  cd Question2
+  698  open mer_counts.jf 
+  699  head mer_counts.jf 
+  700  man cat
+  701  ls
+  702  cat.read.hist mer_counts.jf 
+  703  cd
+  704  ls
+  705  cd qbb2020-answers/
+  706  cd week1
+  707  ls
+  708  cd Question2
+  709  ls
+  710  mv /Users/cmdb/reads.histo ./Question2/
+  711  mv /Users/cmdb/reads.histo .
+  712  ls
+  713  open reads.histo
+  714  head reads.histo
+  715  less -S reads.histo
+  716  ls
+  717  mkdir 2a
+  718  ls
+  719  cd 2a
+  720  less -s reads.histo > kmer_counts.txt
+  721  ls
+  722  nano kmer_counts.txt 
+  723  cd ..
+  724  ls
+  725  less -s reads.histo > 2a/kmer_counts.txt
+  726  ls
+  727  cd 2a
+  728  ls
+  729  less -S kmer_counts.txt
+  730  nano 2a.answer.txt
+  731  ls
+  732  ls
+  733  history

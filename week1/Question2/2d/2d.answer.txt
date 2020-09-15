@@ -1,0 +1,4 @@
+The GenomeScope genome size estimate min is 233,468 bp and max is 233,805
+bp. This is slightly under the actual genome size of 233,806. I'd say it
+is so close that it is informative and could be used to calculate the total
+coverage if needed for estimatory purposes.  
