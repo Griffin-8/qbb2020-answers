@@ -1,0 +1,376 @@
+142  conda activate lab-week2
+  143  ls
+  144  cd Documents/
+  145  ls
+  146  ls
+  147  cd ..
+  148  ls
+  149  cd Desktop
+  150  ls
+  151  cd ..
+  152  ls
+  153  cd qbb2020-answers
+  154  ls
+  155  mkdir week2
+  156  ls
+  157  mv /Users/cmdb/*fastq /week2/
+  158  ls
+  159  ls week2
+  160  mv /Users/cmdb/*.fastq /week2/
+  161  ls week2
+  162  cd ..
+  163  ls
+  164  cd qbb2020-answers/
+  165  ls
+  166  mv /Users/cmdb/*.fastq /./week2/
+  167  mv /Users/cmdb/*.fastq ./week2/
+  168  ls week2
+  169  cd ..
+  170  ls
+  171  cd qbb2020-answers/
+  172  ls
+  173  mv /Users/cmdb/BYxRM_subset.tar.xv ./week2/
+  174  mv /Users/cmdb/chromFa.tar.gz ./week2/
+  175  mv /Users/cmdb/sacCer3.fa ./week2/
+  176  ls week2
+  177  cd ..
+  178  ls
+  179  cd qbb2020-answers/
+  180  cd week2
+  181  ls
+  182  bwa index sacCer3.fa 
+  183  ls
+  184  ls
+  185  cd
+  186  ls
+  187  cd Documents/
+  188  ls
+  189  ls
+  190  cd
+  191  ls 
+  192  cd qbb2020-answers/
+  193  ls
+  194  cd week2
+  195  ls
+  196  touch bwa_mem.sh 
+  197  chmod +x bwa_mem.sh 
+  198  subl bwa_mem.sh 
+  199  cat bwa_mem.sh 
+  200  ./bwa_mem.sh 
+  201  subl bwa_mem.sh
+  202  cat bwa_mem.sh 
+  203  ./bwa_mem.sh 
+  204  conda activate lab-week2
+  205  ls
+  206  cd qbb2020-answers/
+  207  ls
+  208  cd week2
+  209  ls
+  210  ./bwa_mem.sh > align_seq.sam
+  211  less -S align_seq.sam 
+  212  samtools
+  213  samtools sort -o -O align_seq.sam align_seq.bam
+  214  samtools sort -O -o align_seq.sam align_seq.bam
+  215  samtools sort -O-bam -o align_seq.sam align_seq.bam
+  216  samtools sort -O bam -o align_seq.sam align_seq.bam
+  217  samtools sort -O bam align_seq.sam -o align_seq.bam
+  218  samtools sort align_seq.sam -o align_seq.bam -O bam
+  219  samtools sort align_seq.sam -O bam -o align_seq.bam
+  220  samtools sort align_seq.sam -o align_seq.bam
+  221  samtools sort align_seq.sam > align_seq.bam
+  222  ls
+  223  head align_seq.bam 
+  224  samtools sort -o align_seq.bam align_seq.sam
+  225  samtools sort -o align_seq.bam -O bam align_seq.sam
+  226  samtools sort -o align_seq.bam -O bam align_seq.sam
+  227  samtools sort -o align_seq.bam align_seq.sam
+  228  ls
+  229  mkdir bwa_mem_ind.sh
+  230  touch bwa_mem_ind.sh/
+  231  chmod +x bwa_mem_ind.sh/
+  232  subl bwa_mem_ind.sh/
+  233  ls
+  234  ./bwa_mem_2.sh
+  235  chmod +x bwa_mem_2.sh 
+  236  cat bwa_mem_2.sh 
+  237  ./bwa_mem_2.sh
+  238  ls
+  239  rm align_08.bam
+  240  ls
+  241  subl bwa_mem_2.sh 
+  242  ./bwa_mem_2.sh 
+  243  ls
+  244  rm align_seq.bam
+  245  head align_09.bam
+  246  samtools sort -o align_09_sorted.bam align_09.bam
+  247  ls
+  248  subl sam_sort.sh
+  249  chmod +x sam_sort.sh
+  250  ls
+  251  ./sam_sort.sh
+  252  ls
+  253  mkdir fastq_seqs
+  254  mv *.fastq ./fastq_seqs/
+  255  ls
+  256  mkdir bam_files
+  257  mv *.bam ./bam_files
+  258  ls
+  259  mkdir sorted.bam_files
+  260  cd bam_files/
+  261  ls
+  262  mv *sorted.bam ../sorted.bam_files/
+  263  ls
+  264  cd ..
+  265  ls
+  266  cd sorted.bam_files
+  267  ls
+  268  cd ..
+  269  ls
+  270  mkdir sacCer3_things
+  271  mv sacCer3* ./sacCer3_things/
+  272  ls
+  273  cd sacCer3_things/
+  274  ls
+  275  cd ..
+  276  ls
+  277  subl freebayes.sh
+  278  ls
+  279  cd sacCer3_things/
+  280  ls
+  281  cd ..
+  282  ls
+  283  cd sorted.bam_files/
+  284  ls
+  285  cd ..
+  286  ls
+  287  chmod +x freebayes.sh 
+  288  freebayes.sh >> Step4.vcf
+  289  subl freebayes.sh
+  290  ./freebayes.sh >> Step4.vcf
+  291  subl freebayes.sh
+  292  chmod +x freebayes.sh 
+  293  ./freebayes.sh >> Step4.vcf
+  294  ls
+  295  head Step4.vcf
+  296  less -S Step4.vcf 
+  297  ls
+  298  ls sorted.bam_files/
+  299  less -S Step4.vcf 
+  300  subl freebayes.sh
+  301  chmod +x freebayes.sh 
+  302  ls
+  303  freebayes.sh
+  304  ./freebayes.sh
+  305  ls
+  306  cd qbb2020-answers/
+  307  ls
+  308  cd day4-lunch
+  309  ls
+  310  git status
+  311  ls
+  312  git add Ex.1.ipynb 
+  313  git status
+  314  git commit -m "Finished day4-lunch"
+  315  git push
+  316  ls
+  317  cd ..
+  318  ls
+  319  cd day4-homework/
+  320  ls
+  321  ls
+  322  chmod +x Kmer_matcher_final.py 
+  323  Kmer_matcher_final.py subset.fa droYak2_seq.fa 11 > day4.hw.answer.txt
+  324  python Kmer_matcher_final.py subset.fa droYak2_seq.fa 11 > day4.hw.answer.txt
+  325  ls
+  326  less -S day4.hw.answer.txt 
+  327  python Kmer_matcher_final.py subset.fa droYak2_seq.fa 11 > day4.hw.answer.txt
+  328  ls
+  329  git status
+  330  ls
+  331  git add Kmer_matcher_final.py 
+  332  git status
+  333  ls
+  334  git add day4.hw.answer.txt 
+  335  ls
+  336  git status
+  337  git commit -m "day4-hw completed"
+  338  git push
+  339  ls
+  340  ls
+  341  cd ..
+  342  ls
+  343  cd day5-lunch
+  344  ls
+  345  git status
+  346  ls
+  347  git add Loadandwrangle.py.ipynb 
+  348  git status
+  349  git commit -m "day5-lunch completed"
+  350  git push
+  351  conda activate lab-week2
+  352  ls
+  353  cd qbb2020-answers/
+  354  ls
+  355  cd week2
+  356  ls
+  357  rm Step4.vcf 
+  358  ls
+  359  subl freebayes.sh 
+  360  ./freebayes.sh
+  361  ls
+  362  less -S Step4.vcf
+  363  cd
+  364  conda activate cmdb
+  365  jupyter notebooks
+  366  jupyter notebook
+  367  cd qbb2020
+  368  cd
+  369   cd qbb2020-answers/
+  370  ls
+  371  cd week2
+  372  ls
+  373  less -S Step7.vcf 
+  374  ls
+  375  ls
+  376  less -S bwa_mem_ind.sh
+  377  ls bwa_mem_ind.sh
+  378  less -S bwa_mem_2.sh 
+  379  ls
+  380  cd bam_files/
+  381  ls
+  382  less -S align_09.bam 
+  383  cd ..
+  384  ls
+  385  cd sorted.bam_files/
+  386  ls
+  387  less -S aling_09
+  388  less -S align_09_sorted.bam 
+  389  ls
+  390  cd ..
+  391  ls
+  392  less -S Step4.vcf 
+  393  cd qbb2020-answers/
+  394  ls
+  395  cd week2
+  396  ls
+  397  less -S Step7.vcf 
+  398  conda activate lab-week2
+  399  ls
+  400  cd qbb2020-answers
+  401  ls
+  402  cd week2
+  403  ls
+  404  less -S freebayes.sh 
+  405  less -S Step4.vcf
+  406  ls
+  407  history
+  408  ls
+  409  vcffilter -f "QUAL > 20" Step4.vcf > Step5.vcf
+  410  ls
+  411  less -S Step5.vcf
+  412  less -S Step5.vcf
+  413  less -S Step4.vcf 
+  414  ls
+  415  vcfallelicprimitives -k -g Step5.vcf > Step6.vcf
+  416  ls
+  417  less -S Step6.vcf 
+  418  snpeff download R64-1-1.86
+  419  ls
+  420  ls
+  421  ls sacCer3_things/
+  422  snpeff ann -h
+  423  ls
+  424  snpeff ann Step6.vcf > Step7.vcf
+  425  less -S Step7.vcf 
+  426  less -S Step6.vcf 
+  427  ls
+  428  cd
+  429  ls
+  430  cd Downloads/
+  431  ls
+  432  cd
+  433  ls
+  434  cd qbb2020-answers/
+  435  ls
+  436  cd week2
+  437  ls
+  438  snpeff ann -h
+  439  snpeff ann R64-1-1.86 Step6.vcf > Step7.vcf 
+  440  less -S Step7.vcf 
+  441  cd 
+  442  jupyter notebook
+  443  jupyter notebooks
+  444  conda activate cmdb
+  445  jupyter notebooks
+  446  jupyter notebook
+  447  cd
+  448  ls
+  449  cd qbb2020-answers/
+  450  ls
+  451  cd week2
+  452  ls
+  453  less -S Step7_2.vcf 
+  454  cd qbb2020-answers/
+  455  ls
+  456  cd week2
+  457  ls
+  458  less -S Step7_2.vcf 
+  459  conda activate lab-week2
+  460  ls
+  461  cd qbb2020-answers/
+  462  ls
+  463  cd week2
+  464  ls
+  465  subl freebayes.sh 
+  466  ./freebayes.sh 
+  467  ls
+  468  less -S Step4.vcf 
+  469  subl freebayes.sh 
+  470  subl freebayes.sh 
+  471  ls
+  472  cd sorted.bam_files/
+  473  ls
+  474  freebayes -f ../sacCer3_things/sacCer3.fa -p 1 --genotype-qualities ./*_sorted.bam > Step4_2.vcf
+  475  ls
+  476  mv step4_2.vcf ../
+  477  ls
+  478  cd ..
+  479  ls
+  480  less -S step4_2.vcf 
+  481  vcffilter -f "QUAL > 20" Step4_2.vcf > Step5_2.vcf
+  482  vcfallelicprimitives -k -g Step5_2.vcf > Step6_2.vcf
+  483  snpeff ann R64-1-1.86 Step6_2.vcf > Step7_2.vcf 
+  484  conda activate cmdb
+  485  cd 
+  486  jupyter notebook
+  487  cd qbb2020-answers/
+  488  ls
+  489  cd week2
+  490  ls
+  491  less -S Step7_2.vcf 
+  492  ls
+  493  ls
+  494  git status
+  495  git add Multipanel_plot.ipynb 
+  496  git commit -m "Lab-week2 Multipanel_plot"
+  497  git status
+  498  git push
+  499  git status
+  500  jupyter notebook
+  501  ls
+  502  cd qbb2020-answers/
+  503  ls
+  504  cd week2
+  505  ls
+  506  head -1000 Step7_2.vcf > Final_submit.vcf
+  507  ls
+  508  cat Final_submit.vcf 
+  509  ls
+  510  git status
+  511  git add Final_submit.vcf 
+  512  git status
+  513  git commit -m "First 1000 lines of final VCF"
+  514  git push
+  515  git status
+  516  history
+
