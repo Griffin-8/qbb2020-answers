@@ -1,0 +1,8 @@
+  494 less -S ID_PhenoData_modified.txt
+  495 less -S PhenoData_32.txt
+  496 cut -f 33 BYxRM_PhenoData.txt > PhenoData_32.txt
+  497 less -S PhenoData_32.txt
+  498 paste ID_PhenoData_modified.txt PhenoData_32.txt > PhenoData_32_final.txt
+  499  less -S PhenoData_32_final.txt
+
+Commands to isolate tunicamycin phenotypes.
