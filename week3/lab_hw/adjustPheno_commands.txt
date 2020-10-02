@@ -1,0 +1,16 @@
+378 cut -f 1 BYxRM_PhenoData.txt | head
+  379 cut -f 1 BYxRM_PhenoData.txt > PhenoData_parsed.txt
+  380 less -S PhenoData_parsed.txt
+  381 cut -f 2- BYxRM_PhenoData.txt > PhenoData_parsed.txt
+  382 head PhenoData_parsed.txt
+  383 cut -f 1 BYxRM_PhenoData.txt > ID_PhenoData.txt
+  384 head ID_PhenoData.txt
+  385 head PhenoData_parsed.txt
+  386 tr '_' '\t' ID_PhenoData.txt | head
+  387 tr '_' '\t' < ID_PhenoData.txt | head
+  388 tr '_' '\t' < ID_PhenoData.txt > ID_PhenoData_modified.txt
+  389 less -S ID_PhenoData_modified.txt
+  390 paste ID_PhenoData_modified.txt PhenoData_parsed.txt > BYxRM_PhenoData_parsed.txt
+  391  less -S BYxRM_PhenoData_parsed.txt
+
+Replaced the underscore that was separating the family ID and sample ID with a tab.
