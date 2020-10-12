@@ -1,0 +1,70 @@
+ ls
+  433  cd qbb2020-answers/
+  434  ls
+  435  cd week4
+  436  ls
+  437  conda install emboss mafft
+  438  ls
+  439  ls
+  440   cd Downloads/
+  441  ls
+  442  mv week4_query.fa /Users/cmdb/qbb2020-answers/week4/
+  443  ls
+  444  mkdir /Users/cmdb/qbb2020-answers/week4
+  445  mv week4_query.fa /Users/cmdb/qbb2020-answers/week4/
+  446  ls
+  447  cd 
+  448  cd qbb2020-answers/
+  449  ls
+  450  cd week4
+  451  ls
+  452  less -S week4_query.fa 
+  453  cd
+  454  cd Downloads/
+  455  ls
+  456  mv seqdump.txt /Users/cmdb/qbb2020-answers/week4/
+  457  ls
+  458  cd
+  459  cd qbb2020-answers/
+  460  ls
+  461  cd week4
+  462  ls
+  463  emboss -help
+  464  emboss --help
+  465  transeq -help
+  466  transeq seqdump.txt 
+  467  ls
+  468  less -S ls
+  469  rm ls
+  470  ls
+  471  transeq seqdump.txt 
+  472  ls
+  473  less -S seqdump.txt 
+  474  less -S Mult_codons.txt 
+  475  transeq week4_query.fa 
+  476  ls
+  477  less -S query_codons.txt 
+  478  MAFFT -help
+  479  MAFFT query_codons.txt Mult_codons.txt 
+  480  ls
+  481  less -S Mult_codons.txt 
+  482  MAFFT
+  483  MAFFT
+  484  l
+  485  ls
+  486  less -S Mult_codons_align.txt 
+  487  MAFFT
+  488  ls
+  489  rm Mult_codons_align2.txt 
+  490  ls
+  491  ls
+  492  ls
+  493  cd ..
+  494  cd week4
+  495  ls
+  496  less -S Mult_codons_align.txt 
+  497  less -S Mult_codons_align.txt 
+  498  less -S Mult_codons.txt 
+  499  cd
+  500  jupyter notebook
+

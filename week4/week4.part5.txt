@@ -1,0 +1,1 @@
+In blastn, under the Algorithm parameters section, I changed the max target sequences to 1000 and the Expect threshold to 0.0001. 
