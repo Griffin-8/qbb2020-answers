@@ -1,0 +1,254 @@
+227  conda activate week5
+  228  ls
+  229  conda install meme -y
+  230  ls
+  231  ls
+  232  cd qbb2020-answers/
+  233  ls
+  234  cd week5
+  235  ls
+  236  cd chr19/
+  237  ls
+  238  cd ..
+  239  cd g1e
+  240  ls
+  241  cd ..
+  242  ls
+  243  mkdir part2
+  244  ls
+  245  cd
+  246  ls
+  247  cd Downloads/
+  248  ls
+  249  mv motif_databases.12.19.tgz /Users/cmdb/qbb2020-answers/week5/part2/
+  250  cd
+  251  ls
+  252  cd qbb2020-answers/
+  253  ls
+  254  cd week5/
+  255  ls
+  256  ls
+  257  cd part2
+  258  ls
+  259  history
+  260  ls
+  261  unzip motif_databases.12.19.tgz 
+  262  ls
+  263  gunzip motif_databases.12.19.tgz 
+  264  ls
+  265  ls
+  266  ls motif_databases.12.19.tar 
+  267  cd motif_databases.12.19.tar 
+  268  unzip motif_databases.12.19.tar 
+  269  ls
+  270  less -S motif_databases.12.19.tar 
+  271  ls
+  272  rm motif_databases.12.19.tar 
+  273  mv /Users/cmdb/Downloads/motif_databases/ ./
+  274  ls
+  275  ls motif_databases/
+  276  ls
+  277  cd ..
+  278  ls
+  279  cd g1e
+  280  ls
+  281  less -S ER4_peaks.narrowPeak 
+  282  cd
+  283  conda activate cmdb
+  284  jupyter notebooks
+  285  open jupyter notebook
+  286  jupyter notebook
+  287  ls
+  288  cd qbb2020-answers/
+  289  ls
+  290  cd week5
+  291  ls
+  292  cd g1e
+  293  ls
+  294  sort -h
+  295  sort --help
+  296  less -S ER4_peaks.narrowPeak 
+  297  less -S ER4_peaks.narrowPeak 
+  298  wc -l ER4_peaks.narrowPeak 
+  299  wc -h
+  300  wc -help
+  301  wc -man
+  302  ls
+  303  less -S ER4_peaks.narrowPeak 
+  304  sort -s -n -k 7,1 ER4_peaks.narrowPeak | less -S
+  305  sort -s -n -k 1,7 ER4_peaks.narrowPeak | less -S
+  306  sort -k 7n ER4_peaks.narrowPeak | less -S
+  307  sort -k 8n ER4_peaks.narrowPeak | less -S
+  308  sort -k 8n ER4_peaks.narrowPeak | Tail 100 > ER4_Top100_peaks.narrowPeak
+  309  sort -k 8n ER4_peaks.narrowPeak | tail -100 > ER4_Top100_peaks.narrowPeak
+  310  less -S ER4_Top100_peaks.narrowPeak 
+  311  meme-chip --help
+  312  ls
+  313  mv ER4_Top100_peaks.narrowPeak ../part2/
+  314  cd ..
+  315  ls
+  316  cd chr19
+  317  ls
+  318  cd ..
+  319  ls
+  320  cd part2
+  321  ls
+  322  bedtools getfasta -fi ../chr19/chr19.fa -bed ER4_Top100_peaks.narrowPeak 
+  323  ls
+  324  cd ..
+  325  ls
+  326  cd chr19/
+  327  ls
+  328  less -S chr19.fa.fai 
+  329  cd ..
+  330  ls
+  331  cd part2
+  332  ls
+  333  bedtools getfasta -fi ../chr19/chr19.fa -bed ER4_Top100_peaks.narrowPeak > CTCF_ER4_Top100.fa
+  334  less -S CTCF_ER4_Top100.fa 
+  335  ls
+  336  meme-chip -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme CTCF_ER4_Top100.fa
+  337  ls
+  338  less -S memechip_out/
+  339  cd memechip_out/
+  340  ls
+  341  less -S meme_out
+  342  less -S CTCF_ER4_Top100.fa 
+  343  ls
+  344  ls meme_tomtom_out
+  345  cd meme_tomtom_out/
+  346  ls
+  347  less -S tomtom.txt
+  348  cd ..
+  349  ls
+  350  ls meme_out
+  351  less motif_alignment.txt 
+  352  ls
+  353  less -S progress_log.txt 
+  354  ls
+  355  cd .
+  356  cd ..
+  357  ls
+  358  rm memechip_out
+  359  rm -n memechip_out/
+  360  rm -i memechip_out/
+  361  rm -f memechip_out/
+  362  rmdir memechip_out/
+  363  rmdir -r memechip_out/
+  364  ls
+  365  rm -r memechip_out/
+  366  ls
+  367  meme-chip -ccut 100 -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme CTCF_ER4_Top100.fa
+  368  ls
+  369  ls memechip_out/
+  370  cd memechip_out/
+  371  ls meme_out/
+  372  ls
+  373  ls alirgn
+  374  less -S motif_alignment.txt 
+  375  less -S align_msgs.txt 
+  376  less -S seqs-centered 
+  377  less -S seqs-centered 
+  378  less -S seqs-centered 
+  379  cd ..
+  380  ls
+  381  less -S CTCF_ER4_Top100.fa 
+  382  ls
+  383  cd memechip_out
+  384  ls
+  385  cd ..
+  386  ls
+  387  meme-chip -ccut 100 -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme ./memechip_out/seqs-centered 
+  388  ls
+  389  cd memechip_out/
+  390  ls
+  391  less -S seqs-centered 
+  392  less -S seqs-
+  393  less -S seqs-shuffled 
+  394  less -S CTCF_ER4_Top100.fa 
+  395  ls
+  396  cd ..
+  397  ls
+  398  less -S CTCF_ER4
+  399  less -S CTCF_ER4_Top100.fa 
+  400  wc -l CTCF_ER4_Top100.fa 
+  401  rm -r memechip_out/
+  402  ls
+  403  meme-chip -meme-maxw 20 -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme ./CTCF_ER4_Top100.fa 
+  404  ls
+  405  cd memechip_out/
+  406  ls
+  407  less -S motif_alignment.txt 
+  408  ls meme_out/
+  409  cd ..
+  410  ls
+  411  cd memechip_out/
+  412  ls
+  413  less -S CTCF_ER4_Top100.fa 
+  414  ls
+  415  less -S combined.meme 
+  416  less -S combined.meme 
+  417  ls
+  418  less -S combined.meme 
+  419  cd ..
+  420  ls
+  421  rm -r memechip_out/
+  422  ls
+  423  meme-chip -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme ./CTCF_ER4_Top100.fa 
+  424  ls
+  425  cd memechip_out/
+  426  ls
+  427  less -S combined.meme 
+  428  ls
+  429  cd ..
+  430  meme-chip -meme-maxw 20 -oc memechip_Jaspar_core2016 -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme ./CTCF_ER4_Top100.fa 
+  431  ls
+  432  cd memechip_Jaspar_core2016/
+  433  ls
+  434   -meme-maxw 20 -oc memechip_Jaspar_core2016 -db /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/MOUSE/HOCOMOCOv11_full_MOUSE_mono_meme_format.meme ./CTCF_ER4_Top100.fa 
+  435  ls meme_out/
+  436  open meme.html
+  437  ls
+  438  cd meme_out/
+  439  ls
+  440  open meme.html
+  441  less -S meme.txt
+  442  ls
+  443  cd ..
+  444  ls
+  445  cd meme_tomtom_out/
+  446  ls
+  447  cd ..
+  448  cd ..
+  449  ls
+  450  rm -r memechip*
+  451  ls
+  452   
+  453  ls
+  454  cd meem
+  455  cd memechip_Jaspar_core2016/
+  456  ls
+  457  less -S combined.meme 
+  458  cd meme_out/
+  459  ls
+  460  open meme.html
+  461  cd ..
+  462  cd ..
+  463  ls
+  464  tomtom memechip_Jaspar_core2016/meme_out/meme.html /Users/cmdb/qbb2020-answers/week5/part2/motif_databases/JASPAR/JASPAR_CORE_2016_vertebrates.meme 
+  465  ls
+  466  cd tomtom_out/
+  467  ls
+  468  open tomtom.html 
+  469  ls
+  470  cd ..
+  471  ls
+  472  cd memechip_Jaspar_core2016/
+  473  ls
+  474  cd meme_
+  475  meme_out
+  476  cd meme_out/
+  477  ls
+  478  epstopdf logo1.eps Strongest_motif.pdf
+  479  ls
+  480  open Strongest_motif.pdf 
