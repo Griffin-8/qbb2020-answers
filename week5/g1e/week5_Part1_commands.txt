@@ -1,0 +1,171 @@
+   15  bash aligner
+   16  ls
+   17  ls -lh
+   18  ls
+   19  conda install macs2 -y
+   20  ls
+   21  cat aligner
+   22  macs2 callpeak -t CTCF_ER4.bam -c input_ER4.bam --format=BAM --name=ER4 --gsize=138000000 --tsize=26
+   23  ls
+   24  macs2 callpeak -t CTCF_G1E.bam -c input_G1E.bam --format=BAM --name=G1E --gsize=138000000 --tsize=26
+   25  ls
+   26  cd ..
+   27  ls
+   28  ls
+   29  ls chr19/
+   30  ls
+   31  cd g1e
+   32  ls
+   33  ls
+   34  bedtools intersect -v -a ER4_summits.bed -b G1E_summits.bed
+   35  ls
+   36  bedtools intersect -v -a ER4_summits.bed -b G1E_summits.bed > Differential_binding.bed
+   37  ls
+   38  cat Differential_binding.bed 
+   39  ls
+   40  wget https://raw.githubusercontent.com/bxlab/qbb2020/master/week5/Mus_musculus.GRCm38.94_features.bed
+   41  ls
+   42  bedtools intersect -c -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed | less -S
+   43  bedtools intersect -C -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed ER4_summtis.bed | less -S
+   44  bedtools intersect -C -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed ER4_summits.bed | less -S
+   45  ls
+   46  ls
+   47  less -S CTCF_binding_sites.bed 
+   48  bedtools intersect -c -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed ER4_summits.bed > CTCF_binding_sites.bed 
+   49  less -S CTCF_binding_sites.bed 
+   50  less -S CTCF_binding_sites.bed 
+   51  less -S CTCF_binding_sites.bed 
+   52  grep -i "exon" > exon_feat.txt
+   53  grep -i "exon" CTCF_binding_sites.bed > exon_feat.txt
+   54  less -S exon_feat.txt 
+   55  grep -i "exon" CTCF_binding_sites.bed | awk '{SUM+=7}END{print SUM}' > exon_feat.txt
+   56  less -S exon_feat.txt 
+   57  less -S CTCF_binding_sites.bed 
+   58  grep -i "exon" CTCF_binding_sites.bed | awk '{SUM+=6}END{print SUM}' > exon_feat.txt
+   59  less -S exon_feat.txt 
+   60  less -S CTCF_binding_sites.bed 
+   61  less -S CTCF_binding_sites.bed 
+   62  cut -f 6 CTCF_binding_sites.bed | less -S
+   63  less -S CTCF_binding_sites.bed 
+   64  cut -f 6 CTCF_binding_sites.bed | less -S
+   65  cut -f 7 CTCF_binding_sites.bed | less -S
+   66  cut -f 7 CTCF_binding_sites.bed | wc -l  106  bedtools intersect -v -a CTCF_ER4_summits.bed -b CTCF_G1E_summits.bed > CTCF_BindingGained.bed
+  107  bedtools intersect -v -a ER4_summits.bed -b G1E_summits.bed > CTCF_BindingGained.bed
+  108  bedtools intersect -v -a G1E_summits.bed -b ER4_summits.bed > CTCF_BindingLost.bed
+  109  ls
+  110  less -S CTCF_BindingGained.bed 
+  111  less -S CTCF_BindingLost.bed 
+  112  less Differential_binding.bed 
+  113  history
+  114  ls
+  115  less -S exon_feat.txt 
+  116  ls
+  117  rm Differential_binding.bed 
+  118  ls
+  119  less -S CTCF_binding_sites.bed 
+  120  grep -i "exon" CTCF_binding_sites.bed > exon_feat.txt
+  121  less -S exon_feat.txt
+  122  less -S CTCF_binding_sites.bed 
+  123  less -S CTCF_binding_sites.bed 
+  124  history
+  125  bedtools intersect -c -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed | less -S
+  126  bedtools intersect -c -a Mus_musculus.GRCm38.94_features.bed -b G1E_summits.bed > CTCF_bind_G1E_feat.bed
+  127  less CTCF_bind_G1E_feat.bed 
+  128  history
+  129  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ | bc -- | cat
+  130  grep -i "exon" CTCF_bind_G1E_feat.bed | cat
+  131  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 | cat
+  132  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 | less -S
+  133  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ | cat
+  134  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ - | cat
+  135  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ - | bc -- | cat
+  136  grep -i "exon" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > G1E_exon.txt
+  137  cat G1E_exon.txt
+  138  grep -i "intron" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > G1E_intron.txt
+  139  cat G1E_intron.txt
+  140  grep -i "promoter" CTCF_bind_G1E_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > G1E_promoter.txt
+  141  cat G1E_promoter.txt 
+  142  less -S CTCF_bind_G1E_feat.bed
+  143  ls
+  144  mkdir feature_overlap
+  145  mv *.txt ./feature_overlap/
+  146  ls
+  147  ls feature_overlap/
+  148  history
+  149  bedtools intersect -c -a Mus_musculus.GRCm38.94_features.bed -b ER4_summits.bed > CTCF_bind_ER4_feat.bed
+  150  less -S CTCF_bind_ER4_feat.bed 
+  151  grep -i "promoter" CTCF_bind_ER4_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > ER4_promoter.txt
+  152  grep -i "exon" CTCF_bind_ER4_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > ER4_exon.txt
+  153  grep -i "intron" CTCF_bind_ER4_feat.bed | cut -f 7 |paste -s -d+ - | bc -- > ER4_intron.txt
+  154  mv *.txt ./feature_overlap/
+  155  ls
+  156  ls feature_overlap/
+  157  cd feature_overlap/
+  158  cat ER4_exon.txt 
+  159  cat G1E_exon.txt 
+  160  cat ER4_promoter.txt 
+  161  cat ER4_intron.txt 
+  162  ls
+  163  cp ER4_exon.txt ER4_features.txt
+  164  ls
+  165  cat ER4_features.txt 
+  166  cp G1E_exon.txt G1E_features.txt
+  167  ls
+  168  sed -i 'Exon' G1E_features.txt 
+  169  ls
+  170  cat G1E_features.txt 
+  171  echo -e "Exon" | cat - G1E_features.txt > G1E_features.txt 
+  172  ls
+  173  cat G1E_features.txt 
+  174  ls
+  175  cp G1E_exon.txt G1E_features.txt
+  176  cat G1E_features.txt 
+  177  echo -e "Exon" | cat - G1E_features.txt > G1E_features_header.txt 
+  178  cat G1E_features_header.txt 
+  179  ls
+  180  ls
+  181  cat G1E_features_header.txt 
+  182  cat G1E_features.txt
+  183  paste G1E_features.txt G1E_intron.txt
+  184  paste G1E_exon.txt G1E_intron.txt G1E_promoter.txt 
+  185  paste G1E_exon.txt G1E_intron.txt G1E_promoter.txt > G1E_features.txt
+  186  cat G1E_features.txt
+  187  rm G1E_features_header.txt 
+  188  echo -e "Exon\Intron\Promoter" | cat - G1E_features.txt > G1E_features_header.txt 
+  189  cat G1E_features_header.txt 
+  190  rm G1E_features_header.txt 
+  191  echo -e "Exon\tIntron\tPromoter" | cat - G1E_features.txt > G1E_features_header.txt 
+  192  cat G1E_features_header.txt 
+  193  ls
+  194  mkdir G1E
+  195  mv G1E_* ./G1E
+  196  ls
+  197  mkdir ./ER4
+  198  ls
+  199  mv ER4_* ./ER4
+  200  ls
+  201  cd ER4
+  202  ls
+  203  paste ER4_exon.txt ER4_intron.txt ER4_promoter.txt > ER4_features.txt
+  204  cat ER4_features.txt 
+  205  echo -e "Exon\tIntron\tPromoter" | cat - ER4_features.txt > ER4_features_header.txt 
+  206  ls
+  207  cat ER4_features_header.txt 
+  208  cd ..
+  209  ls
+  210  cd ..
+  211  ls
+  212  less -S CTCF_BindingGained.bed 
+  213  grep -l CTCF_BindingGained.bed 
+  214  grep -l CTCF_BindingGained.bed | cat
+  215  wc -l CTCF_BindingGained.bed | cat
+  216  wc -l CTCF_BindingGained.bed > Num_sites_gain.txt
+  217  cat Num_sites_gain.txt 
+  218  wc -l CTCF_Bindinglost.bed > Num_sites_lost.txt
+  219  cat Num_sites_lost.txt 
+  220  less -S CTCF_BindingLost.bed 
+  221  less -S CTCF_BindingLost.bed 
+  222  less -S CTCF_Bindinggained.bed 
+  223  ls
+  224  cd
+  225  jupyter notebooks
