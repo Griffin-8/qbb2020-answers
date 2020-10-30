@@ -1,0 +1,48 @@
+332  conda create -n week6 -c bioconda -c anaconda fastqc bismark samtools bowtie2 igv
+  333  conda activate week6
+  334  ls
+  335  wget https://sra-downloadb.be-md.ncbi.nlm.nih.gov/sos2/sra-pub-run-7/SRR3083901/SRR3083901.1
+  336  ls
+  337  rm SRR3083901.1 
+  338  ls
+  339  cd qbb2020-answers/
+  340  ls
+  341  mkdir week6
+369  mkdir Not_needed
+  370  mv SRR308392* ./Not_needed/
+  371  ls
+  372  ls STEM-seq_E4.0ICM_rep1/
+  373  ls
+  374  fastqc ./Not_needed/SRR3083929_2.chr6.fastq 
+  375  ls
+  376  ls Not_needed/
+  377  cd Not_needed/
+  378  open SRR3083929_2.chr6_fastqc.html 
+ 388  mkdir chr6
+  389  ls
+  390  mv chr6.fa.gz ./chr6/
+  391  ls
+  392  bismark_genome_preparation ./chr6/
+  393  ls
+  394  ls chr6/
+434  bismark --genome ./chr6/ -1 STEM-seq_E4.0ICM_rep1/SRR3083926_1.chr6.fastq -2 STEM-seq_E4.0ICM_rep1/SRR3083926_2.chr6.fastq 
+  435  ls
+  436  bismark --genome ./chr6/ -1 STEM-seq_E5.5Epi_rep1/SRR3083929_1.chr6.fastq -2 STEM-seq_E5.5Epi_rep1/SRR3083929_2.chr6.fastq 
+  437  ls
+  438  samtools sort SRR3083926_1.chr6_bismark_bt2_pe.bam -o E4.0ICM_rep1.sorted.bam
+  439  samtools sort SRR3083929_1.chr6_bismark_bt2_pe.bam -o E5.5Epi_rep1.sorted.bam
+  440  ls
+  441  less E4.0ICM_rep1.sorted.bam 
+  442  less -S E4.0ICM_rep1.sorted.bam 
+  443  ls
+  444  samtools index E4.0ICM_rep1.sorted.bam
+  445  ls
+  446  samtools index E5.5Epi_rep1.sorted.bam 
+  447  ls
+  448  bismark_methylation_extractor --help
+  449  ls
+  450  bismark_methylation_extractor --bedgraph --comprehensive SRR3083926_1.chr6_bismark_bt2_pe.bam SRR3083929_1.chr6_bismark_bt2_pe.bam 
+  451  ls
+  452  mkdir methyl_extract
+  453  mv *_bismark_* methyl_extract/
+
