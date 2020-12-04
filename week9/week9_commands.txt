@@ -1,0 +1,70 @@
+  420  mkdir week9
+  421  ls
+  422  mv ../3DGenomeData.tar.gz ./week9/
+  423  cd week9/
+  424  ls
+  425  tar xzf 3DGenomeData.tar.gz
+  426  ls
+  427  ls
+  428  ls data
+  429  ls genome
+  430  ls WT_100kb
+  431  hifive fends --help
+  432  ls
+  433  cd data
+  434  ls
+  435  ls -l WT_100kb/ 
+  436  ls WT_100kb/
+  437  ls
+  438  cd ..
+  439  ls
+  440  subl --help
+  441  subl genome_partition.sh
+  442  ls
+  443  chmod a+rx genome_partition.sh 
+  444  python genome_partition.sh 
+  445  ls
+  446  ls data
+  447  ls data/WT_100kb/
+  448  subl genome_partition.sh 
+  449  ls
+  450  mkdir output_folder
+  451  ls
+  452  chmod genome_partition.sh 
+  453  chmod a+rx genome_partition.sh 
+  454  ls
+  455  python genome_partition.sh 
+  456  ls
+  457  ls output_folder/
+  458  subl genome_partition.sh 
+  459  chmod a+rx genome_partition.sh 
+  460  python genome_partition.sh 
+  461  subl genome_partition.sh 
+  462  ls data/WT_100kb/
+  463  bash genome_partition.sh 
+  464  ls
+  465  ls output_folder/
+  466  ls
+  467  ls genome
+  468  hifive fends --help
+  469  hifive fends -L genome/mm9.len --binned 100000 outputfolder
+  470  ls
+  471  ls outputfolder
+  472  cd outputfolder 
+  473  less -S outputfolder 
+  474  rm -r output_folder
+  475  ls
+  476  ls
+  477  hifive hic-data --help
+  478  hifive hic-data -M data/WT_100kb/raw_\*.mat -X outputfolder hic_data_output
+  479  hifive hic-data -M data/WT_100kb/raw_\*.mat outputfolder hic_data_output
+  480  hifive hic-data -X data/WT_100kb/raw_\*.mat outputfolder hic_data_output
+  481  ls
+  482  ls
+  483  less -S hic_data_output 
+  484  hifive hic-project --help
+  485  hifive hic-project -f 25 -n 25 -j 100000 hic_data_output hic_project_output
+  486  ls
+  487  hifive hic-interval --help
+  488  hifive hic-normalize --help
+  489  hifive hic-normalize express -f 25 -w cis hic_project_output 
