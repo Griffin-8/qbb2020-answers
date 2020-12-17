@@ -1,0 +1,17 @@
+##Create bash to conver kraken to a suitable format for ktImporttext. Apply Cut and awk command to each Kraken file. (Cut out the reiterated name in the first column, and us$
+ subl krona.sh
+ chmod a+rx krona.sh
+ bash ./krona.sh
+
+##Use ktImportText from https://github.com/marbl/Krona/wiki/KronaTools to generate a Krona chart (interactive multi-layer pie chart). 
+##I did it manually. When I tried to add it to the Bash above I got an error: ktImportText directory not found.
+
+ 766  ktImportText day_86_tab.kraken -o ../KRONA/day_86_tab.html
+  767  ls
+  768  ktImportText day_88_tab.kraken -o ../KRONA/day_88_tab.html
+  769  ktImportText day_89_tab.kraken -o ../KRONA/day_89_tab.html
+  770  ktImportText day_90_tab.kraken -o ../KRONA/day_90_tab.html
+  771  ktImportText day_93_tab.kraken -o ../KRONA/day_93_tab.html
+  772  ktImportText day_94_tab.kraken -o ../KRONA/day_94_tab.html
+  773  ktImportText day_97_tab.kraken -o ../KRONA/day_97_tab.html
+
